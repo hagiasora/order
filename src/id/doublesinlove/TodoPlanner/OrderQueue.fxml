@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="361.0" prefWidth="515.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="id.doublesinlove.TodoPlanner.ControllerQueue">
+   <children>
+      <TableView fx:id="tabelAntri" layoutX="32.0" layoutY="36.0" onSort="#tabel" prefHeight="258.0" prefWidth="452.0">
+        <columns>
+          <TableColumn fx:id="columnPemesan" prefWidth="123.0" text="Nama" />
+          <TableColumn fx:id="columnPesanan" prefWidth="190.0" text="Pesanan" />
+            <TableColumn fx:id="columnTotal" prefWidth="138.0" text="Total" />
+        </columns>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TableView>
+      <JFXButton fx:id="delete" buttonType="RAISED" layoutX="32.0" layoutY="314.0" onAction="#delete" prefHeight="25.0" prefWidth="168.0" ripplerFill="#5f91e0" text="DELETE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>
